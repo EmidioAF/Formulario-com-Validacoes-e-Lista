@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro com Validação</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Cadastro</h2>
+  <form id="cadastroForm" autocomplete="off">
+    <label>
+      Nome:
+      <input type="text" id="nome" name="nome">
+      <span id="nomeErro" class="erro"></span>
+    </label>
+
+    <label>
+      E-mail:
+      <input type="email" id="email" name="email">
+      <span id="emailErro" class="erro"></span>
+    </label>
+
+    <label>
+      Senha:
+      <input type="password" id="senha" name="senha">
+      <span id="senhaErro" class="erro"></span>
+    </label>
+
+    <label>
+      Confirmar Senha:
+      <input type="password" id="confirmarSenha" name="confirmarSenha">
+      <span id="confirmarErro" class="erro"></span>
+    </label>
+
+    <label>
+      Data de nascimento:
+      <input type="date" id="nascimento" name="nascimento">
+    </label>
+
+    <label>
+      Telefone (opcional):
+      <input type="text" id="telefone" name="telefone" maxlength="15">
+    </label>
+
+    <label>
+      <input type="checkbox" id="termos"> Aceito os Termos
+      <span id="termosErro" class="erro"></span>
+    </label>
+
+    <button type="submit" id="salvarBtn" disabled>Salvar</button>
+  </form>
+
+  <h2>Lista de Usuários</h2>
+  <ul id="usuariosLista"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
